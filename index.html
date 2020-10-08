@@ -1,46 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset= "UTF-8">
-    <meta name ="viewport" content="width-device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-comatible" content="ie=edge">
-    <little>Tip Calculator</little>
-    <link rel="stylesheet" href="style.css">
-    <script src="scripts.js" async></script>
-</head>
-<body>
-    <main>
-        <h1>Tip Calculator</h1>
-        <form>
-            <div id="input-container">
-                <label for="bill" class="no-margin-top">Bill</label>
-                <div class="custom-input">
-                    <input id="bill"  name="bill" type="number" value="0.00" min="0">
-                </div>
-                <label for="tip">Tip%</label>
-                <div class="custon-input">
-                    <button id="tip-minus" class="minus" type="button">-</button>
-                    <input id="tip" name="tip" type="number" value="15.00" min="0">
-                    <button id="tip-plus" class="plus" type="button"></button>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <main>
+            <h1 id="topic">Tip Calculator</h1>
+            <div id="boxes">
+            <div id="tip_box">
+            <label> Tip %</label>
+            <input id="tip" value="2" type="number" class="input">
+            </div>
+            <div id="bill_box"></div>
+            <label id="bill_label"> Bill </label>
+            <input id="bill" value="5.00" type="number" class="input">
+
+            <div id="people_box"></div>
+            <label id="people_label">number of people</label>
+            <input id="people" value="7" type="number" class="input">
+            </div>
+            <div id="tip">
+                <label id="tip-per">Your Tip</label>
+                <div id="display" class="display">0.00</div>
+    
+                <label id="bill"></label>
+                <div id= "bill" class="bill"></div>
+    
+                <label id="total bill">The total is</label>
+                <div id="total" class="total">$0.00</div>
+    
                 </div>
 
-                <label for="people">people</label>
-                <div class="custom-input">
-                    <buttonid="people-tip" class="minus" type="button">-</buttonid>
-                    <button id="people-minus" class="minus" type="button" value="1" min="1">
-                    <button id="people-plus" class="plus" type="button"></button>         
-                </div>
             </div>
-            <div>
-            <div class="divider"></div>
-            <div id="output-container">
-                <span id="display-tip" for="bill tip people">$0.00</span>
-                <br>
-                <br>
-                <span>Tip</span>
-                <span id="display-total" for="bill tip people">$ 0.00</span>
-            </div>
-        </form>
-    </main>
-</body>
+        </main>
+        <script src="scripts.js" async></script>
+</body> 
 </html>
